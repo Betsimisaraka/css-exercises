@@ -1,8 +1,236 @@
-* {
 /*
-  Property name
-  Property description
+  Property name: 
+  Font
+  Property description:
+  The font property is a shorthand for font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family. Alternatively, it sets an element's font to a system font.
 */
   /* Property example with a value */
-
+.font {
+  font: bold;
 }
+
+/*
+  Property name: 
+  Font-family
+  Property description:
+  The font-family property identify the most important list of one or more font family names 
+  It can change the word how it looks and depents on what value did you put.
+*/
+  /* Property example with a value */
+.font-family {
+    font-family: sans-serif;
+}
+
+.font-size {
+  /*
+    Property name: 
+    font-size
+    Property description:
+    The font-size property sets the size of the font of the word. It can be large or small.
+  */
+    /* Property example with a value */
+    font-size: x-large;
+}
+
+  /*
+    Property name: 
+    font-weight
+    Property description:
+    The font-weight property sets the weight (or boldness) of the font. It depends on the font-family you are using.
+    */
+      /* Property example with a value */
+.font-weight {
+    font-weight: lighter; 
+}
+
+  /*
+    Property name: 
+    Font-style
+    Property description:
+    The font-style property sets whether a font should be styled with a normal, italic, or oblique face from its font-family.
+  */
+    /* Property example with a value */
+.font-style {
+  font-style: oblique;   
+}
+
+  /*
+    Property name: 
+    Line-height
+    Property description:
+    The line-height property sets the height of a line box. It's commonly used to set the distance between lines of text. 
+  */
+    /* Property example with a value */
+.line-height {
+  line-height: 18px;  
+}
+
+  /*
+    Property name: 
+    font-variant
+    Property description:
+    Specifies variant representations of the font.The font-variant property is a shorthand for the longhand properties font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian.
+ */
+    /* Property example with a value */
+.font-variant {
+  font-variant: small-caps;
+}
+
+  /*
+    Property name: 
+    font-stretch
+    Property description:
+    The font-stretch property selects a normal and expanded face from a font.
+  */
+    /* Property example with a value */
+.font-stretch {
+    font-stretch: ultra-condensed;
+}
+
+  /*
+    Property name: 
+    font-size-adjust
+    Property description:
+    The font-size-adjust property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
+  */
+    /* Property example with a value */
+.font-size-adjust {
+    font-size-adjust: initial;
+}
+
+  /*
+    Property name: 
+    font-synthesis
+    Property description:
+    The font-synthesis property controls which are missing in font family, bold or italic, may be synthesized by the browser.
+  */
+    /* Property example with a value */
+.font-synthesis {
+    font-synthesis: weight;
+}
+
+  /*
+    Property name: 
+    letter-spacing
+    Property description:
+    The letter-spacing property sets space between letters.
+  */
+    /* Property example with a value */
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+  /*
+    Property name: 
+    word-spacing
+    Property description:
+    The word-spacing property sets space between words.
+  */
+    /* Property example with a value */
+.word-spacing {
+    word-spacing: 2px;
+}
+
+  /*
+    Property name: 
+    text-align
+    Property description:
+    The text-align property sets the words or a sentence in different direction, it depends on what you like left, or right, or ect.
+  */
+    /* Property example with a value */
+.text-align {
+    text-align: center;
+}
+
+  /*
+    Property name: 
+    text-decoration
+    Property description:
+    The text-decoration sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, and text-decoration-style.
+  */
+    /* Property example with a value */
+.text-decoration {
+    text-decoration: rgb(red, green, blue);
+}
+
+  /*
+    Property name: 
+    text-decoration-line
+    Property description:
+    The text-decoration-line property sets line decoration in the sentence, that is used on text in an element, such as an underline or overline.
+  */
+    /* Property example with a value */
+.text-decoration-line {
+    text-decoration-line: line-through;
+}
+
+  /*
+    Property name: 
+    text-decoration-style
+    Property description:
+    The text-decoration-style property specifies the style of the text-decoration-line such as underline, line-throught, and overline.
+  */
+    /* Property example with a value */
+.text-decoration-style {
+    text-decoration-style: dotted;
+    text-decoration-line: line-through;
+}
+
+  /*
+    Property name: 
+    text-decoration-color
+    Property description:
+    The text-decoration-color property specifies the color of the text.
+  */
+    /* Property example with a value */
+.text-decoration-color {
+    text-decoration-color: seagreen;
+    text-decoration-line: line-through;
+}
+
+  /*
+    Property name: 
+    text-indent
+    Property description:
+    The text-indent property sets the length of indentation that is put before lines of text in a block.The indentation only affects the first line. 
+  */
+    /* Property example with a value */
+.text-indent {
+    text-indent: 2rem;
+}
+
+  /*
+    Property name: 
+    text-transform
+    Property description:
+    The text-transform property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. 
+  */
+    /* Property example with a value */
+.text-transform {
+    text-transform: lowercase;
+}
+
+  /*
+    Property name: 
+    vertical-align
+    Property description:
+     The vertical-align property affects the vertical positioning of the inline boxes generated by an inline-level element inside a line box.
+  */
+    /* Property example with a value */
+.vertical-align {
+    vertical-align: middle;
+}
+
+  /*
+    Property name: 
+    white-space
+    Property description:
+    The white-space property sets how white space inside an element is handled. It is a shorthand for the 'white-space-collapsing' and 'text-wrap.
+  */
+    /* Property example with a value */
+.white-space {
+    white-space: pre-line;
+}
+
+
+
