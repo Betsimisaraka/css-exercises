@@ -1,3 +1,56 @@
+.example > * {
+    
+}
+.example p {
+    font-weight: 400;
+}
+.example h2,
+.example h3,
+.example h4,
+.example h5,
+.example h6 {
+    font-weight: 700;
+}
+
+.example h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+
+}
+.example h2 {
+    font-size: 2rem;
+    
+}
+.example h3 {
+    font-size: 1.5rem;
+    
+}
+.example h4 {
+    font-size: 1.25rem;
+    
+}
+.example h5 {
+    font-size: 1rem;
+
+}
+.example h6 {
+    font-size: 1rem;
+    font-variant-ligatures: small-caps;
+    
+}
+p.intro {
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
+}
+.example p {
+    font-size: 1rem;
+    
+}
+
+.example p small {
+    font-size: 0.75rem;
+    
+}
 #section-sans-serif {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,68 +63,10 @@
      font-family: courier New, Lucida Sans Typewriter, monospace;
 }
 
-.example h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-block-end:1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
-}
-.example h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-block-end:1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
-}
-.example h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-block-end:1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
-}
-.example h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-block-end:1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
-}
-.example h5 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-block-end:1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
-}
-.example h6 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-block-end:1em;
-    font-variant-ligatures: small-caps;
-    letter-spacing: 0em;
-}
-p.intro {
-    font-size: 1.125rem;
-    font-weight: 400;
-    margin-block-end: 1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0.1em;
-}
-p {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-block-end: 1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
-
+#section_fantasy {
+    font-family: Papyrus, fantasy;
 }
 
-p + small {
-    font-size: 0.75rem;
-    font-weight: 400;
-    margin-block-end: 1em;
-    font-variant-ligatures: none;
-    letter-spacing: 0em;
+#section_cursive {
+     font-family: cursive;
 }
