@@ -1,15 +1,4 @@
-/*
-  Property name: 
-  Font
-  Property description:
-  The font property is a shorthand for font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family. Alternatively, it sets an element's font to a system font.
-*/
-  /* Property example with a value */
-.font {
-  font: bold;
-}
-
-/*
+ /*
   Property name: 
   Font-family
   Property description:
@@ -40,7 +29,7 @@
     */
       /* Property example with a value */
 .font-weight {
-    font-weight: lighter; 
+    font-weight: 400; 
 }
 
   /*
@@ -51,7 +40,7 @@
   */
     /* Property example with a value */
 .font-style {
-  font-style: oblique;   
+  font-style: oblique, italic;   
 }
 
   /*
@@ -62,14 +51,14 @@
   */
     /* Property example with a value */
 .line-height {
-  line-height: 18px;  
+  line-height: 1.25;  
 }
 
   /*
     Property name: 
     font-variant
     Property description:
-    Specifies variant representations of the font.The font-variant property is a shorthand for the longhand properties font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian.
+    Optional features of the font.The font-variant property is a shorthand for the longhand properties font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian.
  */
     /* Property example with a value */
 .font-variant {
@@ -80,6 +69,7 @@
     Property name: 
     font-stretch
     Property description:
+    How wide each character need to be.
     The font-stretch property selects a normal and expanded face from a font.
   */
     /* Property example with a value */
@@ -94,8 +84,9 @@
     The font-size-adjust property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
   */
     /* Property example with a value */
-.font-size-adjust {
-    font-size-adjust: initial;
+  font-size-adjust {
+    font-size: 32px;
+    font-size-adjust: 0.5;
 }
 
   /*
@@ -105,7 +96,7 @@
     The font-synthesis property controls which are missing in font family, bold or italic, may be synthesized by the browser.
   */
     /* Property example with a value */
-.font-synthesis {
+  font-synthesis {
     font-synthesis: weight;
 }
 
@@ -135,11 +126,12 @@
     Property name: 
     text-align
     Property description:
-    The text-align property sets the words or a sentence in different direction, it depends on what you like left, or right, or ect.
+    The text-align property sets the words or a sentence in different position, it depends on what you like left, or right, or ect.
   */
     /* Property example with a value */
-.text-align {
-    text-align: center;
+  text-align {
+    text-align: ".";
+    text-align: justify;
 }
 
   /*
@@ -149,7 +141,7 @@
     The text-decoration sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, and text-decoration-style.
   */
     /* Property example with a value */
-.text-decoration {
+  text-decoration {
     text-decoration: rgb(red, green, blue);
 }
 
@@ -160,7 +152,7 @@
     The text-decoration-line property sets line decoration in the sentence, that is used on text in an element, such as an underline or overline.
   */
     /* Property example with a value */
-.text-decoration-line {
+  text-decoration-line {
     text-decoration-line: line-through;
 }
 
@@ -171,7 +163,7 @@
     The text-decoration-style property specifies the style of the text-decoration-line such as underline, line-throught, and overline.
   */
     /* Property example with a value */
-.text-decoration-style {
+  text-decoration-style {
     text-decoration-style: dotted;
     text-decoration-line: line-through;
 }
@@ -225,7 +217,7 @@
     Property name: 
     white-space
     Property description:
-    The white-space property sets how white space inside an element is handled. It is a shorthand for the 'white-space-collapsing' and 'text-wrap.
+    The white-space property control how white space inside an element is handled. It is a shorthand for the 'white-space-collapsing' and 'text-wrap.
   */
     /* Property example with a value */
 .white-space {
