@@ -1,5 +1,5 @@
 .example > * {
-    
+    margin-block-end: 1em;
 }
 .example p {
     font-weight: 400;
