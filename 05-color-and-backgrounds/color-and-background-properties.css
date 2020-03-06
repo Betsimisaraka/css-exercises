@@ -6,3 +6,74 @@
     /* Property example with a value */
 
   }
+ 
+  /* Color
+    The color property sets the foreground color and text decoration and it makes the text easy to read.
+  */
+  color {
+    color: tomato;
+  }
+
+  /* background-color
+     Backgroound-color property sets the background color of an element and it makes the text easy to read.
+  */
+  background-color {
+      background-color: hsla(hue, saturation, lightness, alpha);
+  }
+
+  /* background-image
+     Background-image property sets one or more background images on an element
+  */
+  background-image {
+    background-image: url();
+    background-image: linear-gradient();
+  }
+
+  /* background-repeat
+     Background-repeat property sets how the background images are repeated.
+  */
+  background-repeat {
+    background-repeat: round;
+  }
+
+/* background-position
+   Background-position property sets the initial position of the background images.
+*/
+background-position {
+  background-position: center;
+  background-image: -webkit-linear-gradient();
+}
+
+/* background-attachment
+   Background-attachment property sets wether the background images are fixed or scroll with its containing block.
+*/
+background-attachment {
+  background-attachment: scroll;
+  background-image: -moz-linear-gradient();
+}
+/* background-clip
+   Background-clip property determines wether an element's background extend underneath its border-box.
+*/
+background-clip {
+  background-clip: border-box;
+  color: transparent;
+}
+
+/* background-origin
+  Background-origin property sets the background's origin: from the border start, inside the border, or inside the padding.
+*/
+background-origin {
+  background-origin: padding-box;
+}
+/* background-size
+   Background-size property specifies the size of the background images.
+*/
+background-size {
+  background-size: contain;
+}
+/* box-shadow
+  Box-shadow property adds shadow effects around an element's frame. You can set multiple effects separated by commas.
+*/
+box-shadow {
+  box-shadow: rgb(red, green, blue);
+}
