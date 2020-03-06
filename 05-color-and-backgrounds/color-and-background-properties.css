@@ -12,6 +12,7 @@
   */
   color {
     color: tomato;
+    border: currentColor dotted 1px;
   }
 
   /* background-color
