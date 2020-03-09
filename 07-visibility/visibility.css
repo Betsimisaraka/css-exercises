@@ -15,4 +15,32 @@
   - Why would we use `visibility: visible;`?
 
 */
+/*  Opacity
+    Opacity property sets the quality of non transparency, and the degree to which content behind an element is hidden.
+*/
+opacity {
+  opacity: 1;
+}
 
+/* Display 
+   Display property specifies whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+*/
+
+display {
+  display: block;
+}
+
+/*Visibility
+  Visibility property specifies the showing or hiding  an element without changing the layout of a document.
+*/
+
+visibility {
+  visibility: hidden;
+}
+
+/* Opacity is deppend on what value did you put to make it less or more transparancy. But for the background color semi-transparancy is like white color.
+
+'Display: none'; means that the tag or the lement will not appear on the page at all. visibility: hidden; will hide the element, but the element will still take up the space it would if it was fully visible.
+
+We use 'visibility: visible' because we want the content to be seen but not hidden.
+*/
