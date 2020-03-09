@@ -1,36 +1,93 @@
 #dory {
     background-color: deepskyblue;
-    background-image: url("../images/crab.png"),
-                      url("../images/coral-reef.png"),
-                      url("../images/bubble.png");
-    background-position: center, bottom center, center;
-    background-repeat: repeat-x, no-repeat, repeat;
-    background-size: 20%, 150%, 30%;
-    background-image: linear-gradient(to bottom, (rgba(30,75,115,1), rgba(255,255,255,0));
-}
-
-#Henry {
-    background-color: honeydew;
     background-image: url("../images/sun.png"),
-                      url("../images/grass-tile.png"), 
+                      url("../images/crab.png"),
+                      url("../images/coral-reef.png"),
+                      url("../images/bubble.png"),
+                      linear-gradient(180deg, skyblue 0%, skyblue 15%, seagreen 15%,lightgreen 65%, lightyellow 65%, rgb(238, 238, 17) 100%); 
+    background-position: 1% 1%,
+                         90% 90%, /*crab*/
+                         70% 80%, /*coral*/
+                         50% 50%,/*bubble*/
+                         0% 0%;
+    background-repeat: no-repeat,
+                       no-repeat, 
+                       repeat-x, 
+                       no-repeat;
+    background-size: 8%,
+                     20%, 
+                     80%, 
+                     30%,
+                     100%;
+    
+}
+.crab {
+      background-image: url("../images/crab.png");
+      background-position: 70% 50%;
+      background-repeat: no-repeat;
+      background-size: 20%;
+}
+/*.sun {
+  background-image: url("../images/sun.png");
+  background-position: 0% 3%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}*/
+/*.coral-reef {
+  background-image: url("../images/coral-reef.png"),
+                    url("../images/coral-reef.png");
+}*/
+
+#henry {
+    background-color: honeydew;
+    background-image: url("../images/grass-left.png"),
+                      url("../images/sun.png"),
                       url("../images/grass-clump.png"),
-                      url("../images/grass-left.png");
+                      url("../images/grass-tile.png"), 
                       
-    background-position: top center, left, center, right;
-    background-repeat: no-repeat, repeat-x, repeat-x, repeat-x;
-    background-size: 200px, 400px;
-    background-image: linear-gradient(to bottom, (rgba(30,75,115,1), rgba(255,255,255,0));
+                      linear-gradient(0deg, white 35%, skyblue 40%);
+    background-position:50% 500px,
+                        2% 10px,
+                        60% 100px,
+                        40% 100px,
+                        0% 0%;
+    background-repeat: repeat-x,
+                       no-repeat,
+                       repeat-x,
+                       repeat-x,
+                       repeat-x;
+    background-size: 40%,
+                     10%,
+                     40%,
+                     40%,
+                     100%;
+    
 }
 
 #lu-seal {
     background-color: deepskyblue;
-    background-image: url("../images/crab.png"),
+    background-image: 
                       url("../images/palm.png"),
                       url("../images/palm-2.png"),
                       url("../images/beach-ball.png"),
-                      url("../images/sun.png");
-    background-position: bottom right, left, right, bottom left, top center;
-    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, no-repeat;
-    background-size: 200px, 400px, 400px, 200px, 200px;
-    background-image: linear-gradient(to bottom, (rgba(30,75,115,1), rgba(255,255,255,0));
+                      url("../images/sun.png"),
+                      linear-gradient(180deg, skyblue 0%, skyblue 50%, lightyellow 50%, rgb(238, 238, 17) 90%, seagreen 90%, lightgreen 100%); 
+
+    background-position: 
+                         70% 70%, 
+                         50% 50%, 
+                         70% 90%, 
+                         2% 2%,
+                         0% 0%;
+    background-repeat:  
+                       repeat-x, 
+                       repeat-x, 
+                       repeat-x, 
+                       no-repeat;
+    background-size:  
+                     20%, 
+                     20%, 
+                     20%, 
+                     10%,
+                     100%;
 }
