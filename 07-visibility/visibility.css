@@ -38,9 +38,9 @@ visibility {
   visibility: hidden;
 }
 
-/* Opacity is deppend on what value did you put to make it less or more transparancy. But for the background color semi-transparancy is like white color.
+/* Opacity can affect with the element child. But for the background color is just affect the spacific element.
 
 'Display: none'; means that the tag or the lement will not appear on the page at all. visibility: hidden; will hide the element, but the element will still take up the space it would if it was fully visible.
 
-We use 'visibility: visible' because we want the content to be seen but not hidden.
+We use 'visibility: visible' because we want the thing which we hidden before to be seen again.
 */
