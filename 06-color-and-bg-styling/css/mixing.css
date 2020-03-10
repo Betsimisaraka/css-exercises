@@ -27,16 +27,6 @@
       background-repeat: no-repeat;
       background-size: 20%;
 }
-/*.sun {
-  background-image: url("../images/sun.png");
-  background-position: 0% 3%;
-  background-repeat: no-repeat;
-  background-size: 20%;
-}*/
-/*.coral-reef {
-  background-image: url("../images/coral-reef.png"),
-                    url("../images/coral-reef.png");
-}*/
 
 #henry {
     background-color: honeydew;
@@ -66,16 +56,13 @@
 
 #lu-seal {
     background-color: deepskyblue;
-    background-image: 
+    background-image: url("../images/palm-2.png"),
                       url("../images/palm.png"),
-                      url("../images/palm-2.png"),
                       url("../images/beach-ball.png"),
                       url("../images/sun.png"),
-                      linear-gradient(180deg, skyblue 0%, skyblue 50%, lightyellow 50%, rgb(238, 238, 17) 90%, seagreen 90%, lightgreen 100%); 
-
-    background-position: 
+                      linear-gradient(180deg, skyblue 0%, skyblue 40%, seagreen 40%, lightgreen 80%, lightyellow 80%, rgb(238, 238, 17) 100%); 
+    background-position: 90% 90%,
                          70% 70%, 
-                         50% 50%, 
                          70% 90%, 
                          2% 2%,
                          0% 0%;
@@ -84,9 +71,8 @@
                        repeat-x, 
                        repeat-x, 
                        no-repeat;
-    background-size:  
-                     20%, 
-                     20%, 
+    background-size: 30%, 
+                     30%, 
                      20%, 
                      10%,
                      100%;
