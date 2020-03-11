@@ -1,21 +1,31 @@
-li > a[href="#/"] {
+/*li > [href="#/"] {
     visibility: visible;
 }
 
-li > a[href="#/about"] {
+nav a:not([href="#/"]) {
+    visibility: hidden;
+}
+nav ul {
     visibility: hidden;
 }
 
-li > a[href="#/contact"] {
-    visibility: hidden;
+nav li:first-child {
+    visibility: visible;
 }
+*/
 
 
-[data-bg-color="yellow"],
+/*[data-bg-color="yellow"],
 [data-bg-color="blue"],
  tr:nth-child(2) { 
     display: none;
 } 
+*/
+
+tr:nth-of-type(2),
+[data-bg-color="blue"] {
+    display: none;
+}
 
 span {
     display: none;

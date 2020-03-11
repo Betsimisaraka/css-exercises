@@ -5,3 +5,14 @@
   */
     /* Property example with a value */
   }
+  div {
+    border: 2px dashed black;
+    background-color:gainsboro;
+    width: 40px, 60px, 80px, 100px;
+    padding: 30px;
+    margin: 10px;
+    color: red;
+
+
+  }
+  
