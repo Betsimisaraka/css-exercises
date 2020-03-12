@@ -5,14 +5,155 @@
   */
     /* Property example with a value */
   }
-  div {
-    border: 2px dashed black;
-    background-color:gainsboro;
-    width: 40px, 60px, 80px, 100px;
-    padding: 30px;
-    margin: 10px;
-    color: red;
 
-
+  /*Content-box
+  Content-box is the box which contain the content. It has its width and hieght with padding, border and margin.   
+  */
+  content-box {
+    content: normal;
   }
   
+  /*Padding-box
+    Padding-box property specifies the padding area of an element and it is in between border-box and content-box. 
+  */
+  padding-box {
+       padding: 100%;
+  }
+  
+  /*Border-box 
+     Border box is specified the border of an element and it comes after the margin-box.
+  */
+  border-box {
+     border: 2px solid red;
+  }
+
+/*border
+   Border property specifies the border of the element. It is a shorthand of border-color, border-width and border-style.
+*/
+border {
+  border: 2px solid rebeccapurple;
+}
+
+/*Border-color
+    Border-color property sets the color of the four edges of an element.
+*/
+border-color {
+  border-color: plum;
+}
+
+/*Border-style
+  Border-style sets the style of the border arround the element.
+*/
+border-style {
+  border-style: dotted;
+}
+
+/* Border-wight
+   Border-width property sets how big is the border should be.
+*/
+border-width {
+  border-width: thick;
+}
+
+/* Margin
+   Margin property specifies the margin area of a four side of an element. It is a shorthand of margin-right, margin-left, margin-top and margin-bottom. 
+*/
+margin {
+  margin: auto;
+} 
+
+/* Margin-top
+   Margin-top sets to specify that the top of the margin need to be change 10px for example.
+*/
+margin-top {
+  margin-top: 10px;
+}
+
+/* Margin-left
+   Margin-left sets the thickness of the left edjeof an element.
+*/
+margin-left {
+  margin-left: 10%;
+}
+
+/* Margin-bottom
+   To specify that the bottom edge need to be extened or munis.
+*/
+margin-bottom {
+  margin-bottom: 3rem;
+}
+
+/* Margin-right
+   The right edge need to be 3em.
+*/
+margin-right {
+  margin-right: 3em;
+}
+
+/*Padding
+  Padding property specifies the padding area of an element and it is a shorthand of padding-top, padding-left, padding-right and padding-bottom.
+*/
+padding {
+  padding: 10%;
+}
+
+/*padding-top
+  To define the thickeness of the padding area at the top.
+*/
+padding-top {
+  padding-left: 10%;
+}
+padding-left
+padding-right 
+padding-bottom.
+
+/* Display
+    Display property define the specific position or float of the type of box that is generated for an element.
+    It is a shorthand of display-outside, display-inside, display-listitem, display-internal, display-box, display-legacy.
+*/
+display {
+  display: inline-block;
+  display: inline;
+  
+}
+
+/* Box-sizing
+   Box-sizing property is specified the total width and hieght of an element.
+*/
+box-sizing {
+  box-sizing: content-box;
+}
+
+/*What happens when two differently sized margins of two different boxes collide?
+They will collapse and they take the bigest value of the margin.
+The second one will be nested inside of the first one.
+
+What is the formula for working out an element's visual width? How is this different when using box-sizing: border-box; on the element?
+
+With the formula you have to calculate the width and the height, but with the box-sizing: border-box you just specify the number of size like rem or em or px.
+
+What is the difference between display values inline, inline-block, and block?
+
+If you set the element to be inline it will affect with all the element's children. But with blck you have to specify the element that you want to be block so that it want be affect with the other chidren.
+*/ 
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: white;
+}
+h1 {
+  color: cyan;
+  font-size: xx-large;
+}
+
+h2 {
+  color: blue;
+  font-size: x-large;
+}
+
+p {
+  color: red;
+}
+
