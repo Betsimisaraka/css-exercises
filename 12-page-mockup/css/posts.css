@@ -1,0 +1,48 @@
+.blog-2019 {
+    margin-inline-start: 6rem;
+    margin-inline-end: 6rem;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+.post-1 {
+    border-bottom: 1px solid;
+    margin-bottom: 2rem;
+}
+
+#blog-2019 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1px;
+}
+.problems {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 16px;
+    line-break: normal;
+}
+
+.posted {
+    font-family: serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0px;
+}
+
+#believe {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.post-2 {
+    border-bottom: 1px solid;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,26 @@
+nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-variant: small-caps;
+    text-align: right;
+    word-spacing: 8px;
+    margin-top: -1rem;
+}
+ 
+#home {
+    color: white;
+}
+
+#about {
+    color: white;
+}
+
+#sample-posts {
+    color: white;
+}
+
+#contact {
+    color: white;
+}
