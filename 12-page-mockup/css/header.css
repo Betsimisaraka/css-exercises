@@ -1,40 +1,16 @@
-header {
-    background-image: url("../images/bg_desktop.jpg"),
-                      linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0.5));
-    background-color: rgba(0, 0, 0, 0.5);
-    background-position: 50% 50%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 250px;
-}
+ body > header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: start;
+  margin-block-start: 1rem;
+ }
 
-header h1 {
-    font-size: 1rem;
-    font-weight: 800;
-    font-style: normal;
-    text-align: start 20% 10%;
-    margin-top: 4rem;
-}
-
-#lost-in-madagascar {
-    color: white;
-    margin-left:  1rem;
-    margin-top: 6rem;
-    display: block;
-}
-header h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: -1rem;
-}
-
-#header {
-  font-size: 1.25rem;
-  font-weight: 400;
+ body > header h1 {
+   font-size: 1rem;
+   line-height: 1;
+   margin: 1rem;
+   font-weight: 600;
+ }
+body > header a {
   color: white;
-  text-align: center;
-  margin-bottom: 0rem;
+  text-decoration: none;
 }

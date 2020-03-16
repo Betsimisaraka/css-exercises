@@ -1,16 +1,15 @@
 html {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-     
+    display: block;
 }
 
 body {
-    width: 600px;
-    height: 820px;
-    margin: 0;
-    border: 1px solid; 
+   display: block;
+}
+main {
+  border-block-end: 1px solid;
+  margin-block-end: 2rem;
+}
+
+footer {
+  border-bottom: 1px solid;
 }

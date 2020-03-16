@@ -11,25 +11,29 @@
 <body>
   <header>
     <h1>
-      <a id="lost-in-madagascar" href="/lost-in-madagascar">
+      <a href="/lost-in-madagascar">
         Lost in Madagascar
       </a>
     </h1>
-
-    <nav>
-      <a id="home" href="/">Home</a>
-      <a id="about" href="/about">About</a>
-      <a id="sample-posts" href="/sample-posts">Sample posts</a>
-      <a id="contact" href="/contact">Contact<br></a>
-    </nav>
-    <h2>
-      Lost
-    </h2>
-    <p id="header">
-      Journals of a tourist lost in Madagascar.
-    </p>
   </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/sample-posts">Sample posts</a></li>
+      <li><a href="/contact">Contact<br></a></li>
+    </ul>
+  </nav>
   <main>
+    <header>
+      <h2>
+        Lost
+      </h2>
+      <p>
+        Journals of a tourist lost in Madagascar.
+      </p>
+    </header>
+
     <article class="blog-2019">
 
       <div class="post-1">
@@ -58,24 +62,24 @@
           Posted by <a href="/jesse"> <b>Jesse</b></a> on September 18, 2019.
         </p>
 
-        <button>
-          <a href="/older-post">Older posts →</a>
-        </button>
-
+        <p class="older">
+          <a id="older" href="/older-post">Older posts →</a>
+        </p>
       </div>
     </article>
   </main>
-  <footer class="footer">
-
-    <img id="twitter" src="images/icon-twitter.png" alt>
-    <a href="https://www.twitter.com/jesse"></a>
-
-    <img id="facebook" src="images/icon-facebook.png" alt> 
-    <a href="https://www.facebook.com/jesse"></a>
-
-    <img id="github" src="images/icon-github.png" alt> 
-    <a href="https://www.github.com/jesse"></a>
-
+  <footer>
+    <ul>
+      <li>
+        <a class="icon" href="https://twitter.com/LostInMadagascar"> Lost in Madagascar on twitter </a>
+      </li>
+      <li>
+        <a class="icon" href="https://facebook.com/LostInMadagascar"> Lost in Madagascar on facebook </a>
+      </li>
+      <li>
+        <a class="icon" href="https://github.com/LostInMadagascar"> Lost in Madagascar on github </a>
+      </li>
+    </ul>
     <p class="copyright">
       Copyright © Your Website 2019
     </p>

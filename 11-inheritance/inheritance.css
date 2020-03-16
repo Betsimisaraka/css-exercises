@@ -1,11 +1,17 @@
-/* Inheritance 
+/* Inheritance
 We mean by inheritance is like when we don't put the specific value for a property on an element. It can affect in all the element children from their parent.
 
 The properties that have value that are inherited by default are: font-family, font-weigth, font-size, font-style and color.
 
-For the currentColor keyword is we just want the color value to work with the spacific element of an element. 
+For the currentColor keyword is we just want the color value to work with the spacific element of an element.
 But with the inherit keyword it will apply with all the children of an element and in that case the currentColor will not be seen.
 
- Revert 
- Initial is to tell the browser to set the default value of the property which we use.
+ Revert represents whatever value the property would be if nothing is applied to it at all.
+ Initial is to tell the browser to set the default value of the property of an element which we use.
  Unset we can still put some styles with unset value.
+
+ If you use inherit value it will apply with all of the children of the element sometimes you even don't mean it.
+
+ For the unset value it display otomaticaly the default value of the property of an element.
+ Revert can remove affects rules which you set in aparent on a child of an element.
+ If you put an initial value you are expected the default value but your own value will not apply in the property.

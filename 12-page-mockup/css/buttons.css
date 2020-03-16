@@ -1,14 +1,13 @@
-button {
-    background-color: royalblue;
-    width: 180px;
-    height: 25px;
-    margin-left: 16rem;
+.older {
+    background-color: rgba(16, 165, 255, 1);
+    width: 120px;
+    margin-left: 25rem;
     font-variant: small-caps;
-    padding: 0.1rem;
+    padding: 1rem;
     margin-bottom: 1rem;
 }
 
-button a {
+#older {
     text-decoration: none;
     color: white;
 }
