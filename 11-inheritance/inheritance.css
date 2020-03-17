@@ -1,17 +1,62 @@
 /* Inheritance
 We mean by inheritance is like when we don't put the specific value for a property on an element. It can affect in all the element children from their parent.
 
-The properties that have value that are inherited by default are: font-family, font-weigth, font-size, font-style and color.
+The properties that have value that are inherited by default are:
+border-collapse
+border-spacing
+caption-side
+color
+cursor
+direction
+empty-cells
+font-family
+font-size
+font-style
+font-variant
+font-weight
+font-size-adjust
+font-stretch
+font
+letter-spacing
+line-height
+list-style-image
+list-style-position
+list-style-type
+list-style
+orphans
+quotes
+tab-size
+text-align
+text-align-last
+text-decoration-color
+text-indent
+text-justify
+text-shadow
+text-transform
+visibility
+white-space
+widows
+word-break
+word-spacing
+word-wrap
 
 For the currentColor keyword is we just want the color value to work with the spacific element of an element.
 But with the inherit keyword it will apply with all the children of an element and in that case the currentColor will not be seen.
 
- Revert represents whatever value the property would be if nothing is applied to it at all.
+ Revert sets the original inherited value.
  Initial is to tell the browser to set the default value of the property of an element which we use.
  Unset we can still put some styles with unset value.
+ Reset sets everything thing to 0
 
  If you use inherit value it will apply with all of the children of the element sometimes you even don't mean it.
-
+ Some properties are not have inherit value by default.
  For the unset value it display otomaticaly the default value of the property of an element.
- Revert can remove affects rules which you set in aparent on a child of an element.
+ Revert can remove affects rules which you set in a parent on a child of an element.
  If you put an initial value you are expected the default value but your own value will not apply in the property.
+ They can undo your work which you have done before.
+ */
+ div > * {
+   position: inherit;
+   left: inherit;
+   top: inherit;
+ }
