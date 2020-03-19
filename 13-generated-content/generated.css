@@ -1,7 +1,9 @@
 /*1- Do you know what that special property is?
 content
-2- What functions can we use in that property's value?
-counter
+2- What functions can we use in that property's value?*/
+/*content:counter (clause)
+        attr ("action")
+        url(imageURL)
 3- What are the various pseudo-elements?
 ::-moz-progress-bar
 ::-moz-range-progress
@@ -44,24 +46,36 @@ We use pseudo-element because we want to select a specific element which need to
 
 /*1-How do we count in CSS - i.e. what declaration do we use?
 We use calc declaration
+counter:reset, counter:increment;
 */
-div {
-  width: calc(200% - 150px);
-}
+
 /*2- How do we reset a counter?
 We use counter-reset with its name-number pair separated by a space.
 */
-div {
+/*div {
   counter-reset: chapter-count 2;
 }
 3- What are counters useful for?
-IT is useful for calculating something like width, hieght, length,ect.
+It is more flexebility than using <ol> element
+Tell a part of an html and we can make a decoration with it.
+counter-reset
+counter-set
+counter-increment
 1- Name as many properties as you can that are only related to lists
-list-style
-list-style-image
-list-style-position
+list-style:
+list-style-image: url(imageURL)
+list-style-position: inside, outside
 list-style-type
 2- What types of bullet styles are there?
-square, circle, disc, space-counter.
+square, circle, disc.
 3- Can any group of elements be styled to look like a list?
 Yes, some of the element be styled to look like a list by using properties which is related to a list.
+*/
+body {
+  padding-inline-start: 4rem;
+}
+
+p {
+  display: list-item;
+  list-style-type: disc;
+}

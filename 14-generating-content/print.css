@@ -2,8 +2,21 @@
 @media all {
 
 }
+@media screen {
+  body { font-size: 13px; }
+}
 
+@media screen, print {
+  body { line-height:2; }
+}
 /* Only styles for printers please */
 @media print {
-
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+  a::after {
+    content: "(" attr(href) ")";
+  }
 }

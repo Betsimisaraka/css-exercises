@@ -18,3 +18,81 @@
     2. Major clause `<h3>` in a new `<section>`
     …
 */
+
+body {
+  counter-reset: major-clause;
+  width: 40rem;
+  line-height: normal;
+}
+
+h3::before {
+  counter-increment: major-clause;
+  content: counter(major-clause)"."" ";
+
+}
+
+
+h3 {
+  counter-reset: clause;
+}
+
+
+h4::before {
+  counter-increment: clause;
+  content: counter(major-clause) "." counter(clause) "."" ";
+
+}
+
+ol {
+  counter-reset: li;
+  list-style-type: none;
+}
+
+section > ol > li::before {
+      counter-reset: list;
+      content: counter(major-clause) "."
+               counter(clause) "."" "
+               counter(list) "." ;
+      list-style-type: lower-alpha;
+}
+
+section > ol > li > ol > li::before {
+  counter-increment: nested list;
+  content: counter(major-clause)"."
+           counter(clause)"."
+           counter(list)"."
+           counter(nested-list)".";
+           list-style-type: lower-roman;
+}
+
+/*li > ol {
+  counter-reset: ol;
+  list-style-type: lower-roman;
+}
+*/
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
