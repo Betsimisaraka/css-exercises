@@ -47,29 +47,28 @@ ol {
   counter-reset: li;
   list-style-type: none;
 }
-
-section > ol > li::before {
-      counter-reset: list;
-      content: counter(major-clause) "."
-               counter(clause) "."" "
-               counter(list) "." ;
-      list-style-type: lower-alpha;
+ol {
+  counter-reset: list;
 }
 
-section > ol > li > ol > li::before {
-  counter-increment: nested list;
+ol > li::before {
+      counter-increment: list;
+      content: counter(major-clause)"."
+               counter(clause)"."
+               counter(list, lower-alpha)"."" ";
+}
+li > ol {
+  counter-reset: nested-list;
+
+}
+li > ol > li::before {
+  counter-increment: nested-list;
   content: counter(major-clause)"."
            counter(clause)"."
-           counter(list)"."
-           counter(nested-list)".";
-           list-style-type: lower-roman;
+           counter(list, lower-alpha)"."
+           counter(nested-list, lower-roman)"."" ";
 }
 
-/*li > ol {
-  counter-reset: ol;
-  list-style-type: lower-roman;
-}
-*/
 html {
   font-family: Arial, Helvetica, sans-serif;
 }

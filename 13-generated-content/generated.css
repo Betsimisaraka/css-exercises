@@ -69,13 +69,30 @@ list-style-type
 2- What types of bullet styles are there?
 square, circle, disc.
 3- Can any group of elements be styled to look like a list?
-Yes, some of the element be styled to look like a list by using properties which is related to a list.
+Yes, we can use any element to style something to look like a list.
 */
 body {
-  padding-inline-start: 4rem;
+  margin-inline-start: 4rem;
 }
 
 p {
   display: list-item;
   list-style-type: disc;
 }
+border {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: .5rem;
+  border-top-color: currentColor;
+  border-top-color: red;
+  border-bottom-color: green;
+  border-right-color: yellow;
+  border-left-color: blue;
+  border-bottom-width: 5rem;
+  border-left-width: 5rem;
+
+}
+
+Make the three triangle into trasparent and you can get the 1 triangle.
