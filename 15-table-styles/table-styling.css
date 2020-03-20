@@ -1,0 +1,56 @@
+/*
+/*table-layout
+  Table-layout property controls the position of the table with rows, colums, cells.
+*/
+table-layout {
+  table-layout: auto;
+  width: 100%;
+}
+/*border-spacing
+  Border-spacing property spacifies the distance between the two border nearby.
+*/
+border-spacing {
+  border-spacing: 2px;
+}
+/*border-collapse
+  Border-collapse specifies the decoration of the border whether it is collapse or separated.
+*/
+border-collapse {
+  border-collapse: collapse;
+}
+/*caption-side
+   Caption-side property specifies the position of the table caption.
+*/
+caption-side {
+  caption-side: top;
+}
+/*empty-cells
+   Empty-cells property sets whether the border or the background of the empty celles shown or hide.
+*/
+empty-cells {
+  empty-cells: show;
+}
+
+HTML elements these values correspond to
+table <table>
+table-row-group <trgroup>
+table-header-group <thgroup>
+table-footer-group <tfgroup>
+table-row <tr>
+table-cell <td>
+table-column-group <colgroup>
+table-column <col>
+table-caption <caption>
+
+Border-spacing required border-collapse:separated declaration before it can work effectively.
+
+
+The downsides of using the various `table*` values for `display` on a set of elements are, thereby simulating a table layout on non-table elements
+It needs a lot of lay out, difficult that means it takes long time to render or to download.
+
+table-layout: fixed means you specify the value of a table like the width, border, column and cells but for the table-layout: auto: its a default value so the browser sets the default for your table.
+
+Can you use border-spacing and other table-like properties on non-table elements
+Yes we can.
+
+-empty-cells requires border-collapse:separated declaration before it can work effectively
