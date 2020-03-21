@@ -1,0 +1,35 @@
+body {
+  display: table;
+  padding: 1rem;
+  border: 1px solid;
+  margin: 2rem;
+  width: 600px;
+  height: 400px;
+}
+h1 {
+  display: table-caption;
+  text-align: left;
+}
+
+section > h2 {
+  display: table-cell;
+  table-layout: fixed;
+  vertical-align: middle;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin: 3rem;
+}
+section p {
+  display: table-cell;
+  table-layout: fixed;
+  vertical-align: middle;
+  padding-inline-start: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer > p {
+  display: table-cell;
+}
+
+

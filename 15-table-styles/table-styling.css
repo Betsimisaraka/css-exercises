@@ -33,11 +33,11 @@ empty-cells {
 
 HTML elements these values correspond to
 table <table>
-table-row-group <trgroup>
-table-header-group <thgroup>
-table-footer-group <tfgroup>
+table-row-group <tbody>
+table-header-group <thead>
+table-footer-group <tfoot>
 table-row <tr>
-table-cell <td>
+table-cell <td>, <th>
 table-column-group <colgroup>
 table-column <col>
 table-caption <caption>
