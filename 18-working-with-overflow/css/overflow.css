@@ -1,1 +1,9 @@
+.example {
+  overflow: auto;
+  white-space: normal;
+}
+
+.example img {
+  overflow: scroll;
+}
 
