@@ -10,6 +10,9 @@ h1 {
   display: table-caption;
   text-align: left;
 }
+section {
+  display: table-row;
+}
 
 section > h2 {
   display: table-cell;

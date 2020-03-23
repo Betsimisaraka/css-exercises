@@ -16,19 +16,19 @@ border-spacing {
   Border-collapse specifies the decoration of the border whether it is collapse or separated.
 */
 border-collapse {
-  border-collapse: collapse;
+  border-collapse: separate;
 }
 /*caption-side
    Caption-side property specifies the position of the table caption.
 */
 caption-side {
-  caption-side: top;
+  caption-side: top, bottom;
 }
 /*empty-cells
    Empty-cells property sets whether the border or the background of the empty celles shown or hide.
 */
 empty-cells {
-  empty-cells: show;
+  empty-cells: show, hide;
 }
 
 HTML elements these values correspond to
@@ -44,13 +44,14 @@ table-caption <caption>
 
 Border-spacing required border-collapse:separated declaration before it can work effectively.
 
-
 The downsides of using the various `table*` values for `display` on a set of elements are, thereby simulating a table layout on non-table elements
 It needs a lot of lay out, difficult that means it takes long time to render or to download.
+If you want tabular relationship you can't use css.
+If you have tabular it is better to use html.
 
-table-layout: fixed means you specify the value of a table like the width, border, column and cells but for the table-layout: auto: its a default value so the browser sets the default for your table.
+table-layout: fixed means the width of the table will be the same, but for the table-layout: auto: it depents on how big is the content inside of the table cell make the width small or big.
 
 Can you use border-spacing and other table-like properties on non-table elements
-Yes we can.
+Yes we can but we have to set display:table.
 
 -empty-cells requires border-collapse:separated declaration before it can work effectively
