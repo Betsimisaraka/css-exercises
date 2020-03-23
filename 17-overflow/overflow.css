@@ -1,0 +1,43 @@
+/*Difault value,
+
+overflow: visible
+clip: auto
+clip-path: none
+text-overflow: ellipsis: clip
+
+-overflow specifies the content wether it is fit the or not.
+*/
+overflow {
+  overflow: hidden;
+}
+
+/*-clip sets the postion of border.*/
+clip{
+  clip: auto;
+}
+
+/*-clip-path specifies the form of the clip.*/
+clip-path {
+  clip-path: polygon();
+}
+
+/*-text-overflow: ellipsis means to privent from wrapping.*/
+text-overflow {
+  text-overflow: ellipsis;
+}
+/*
+-The reason why we use those property and the thing that makes them useful.
+We use these properties to make our document easy to understand and have a nice decoration.
+They are useful if you want to something like animation or shaping something.
+
+The properties need to be set before these properties that make them work.
+-overflow properties needs overflow-x or overflow-y
+-clip property needs: position:absolute, position:fixed.
+-text-overflow is only work when overflow: hidden, scroll, auto and the white-space: nowrap. IT olso needs block or inline block elements.
+
+-The browser's default way to handle contents that are larger than its container they use display:content.
+
+-Ellipsis is used to decrease the amount of space that should be used in a content.If the space is not enouth it will display clip. But ellipse is used to create the shape of something.
+
+-Text-overflow property does't force the overflow to occur.
+*/
