@@ -1,0 +1,14 @@
+.example img {
+  max-width: 800px;
+  max-height: 900px;
+}
+
+.table_container th {
+  white-space: nowrap;
+  min-width: 300px;
+}
+
+.example svg {
+  width: 80vw;
+  height: 40vw;
+}
