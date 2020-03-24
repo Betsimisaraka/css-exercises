@@ -1,0 +1,85 @@
+/* Width sets the width of the content area, padding area, border area of a certain box.
+*/
+width {
+  width: 3rem;
+}
+
+/*
+Height sets the height of the content area, padding area, border area of a certain boxes.
+*/
+height {
+  height: 2rem;
+}
+
+/*
+Min-width specifies the minimum value of the width of an element.
+*/
+min-width {
+  min-width: 1rem;
+}
+
+/*
+Max-width specifies the maximum value of the width of an element.
+*/
+max-width {
+  max-width: 5rem;
+}
+
+/*
+Max-height specifies the minimum value of the height of an element.
+*/
+min-height {
+  min-height: 2rem;
+}
+
+/*
+Max-height specifies the maximum value of the height of an element.
+*/
+max-height {
+  max-height: 5rem;
+}
+
+/*1- Default value
+*/
+width {
+Width: auto;
+height: auto;
+min-width: 0;
+max-width: none;
+min-height: 0;
+max-height: none;
+}
+
+/*2 Do these default values change if the element is a block-like or an inline-like element?
+They are only used with an inline-blok or a block element.
+*/
+
+/*3-
+IF the min-width value greater than the width the min-width will not affect the document.
+*/
+
+/*4
+If the max-value is less than the width value the browser will just use the max-width to your document.
+*/
+
+/*5
+If the min-width value is greater than the the max-width value the browser will take the biger number that means the min-width will apply to your document.
+*/
+
+/*6
+If the widths are applied to table cells, and the content inside these cells doesn't fit, the content will be overflow outside the celles.
+*/
+
+/*7
+It defines the height of the containing block's height.
+*/
+
+
+/*8
+It should have the same unit in the values.
+The min-width is less than the max-width.
+*/
+
+/*9
+It will imply the biger number, in this case max-width will be effective.
+*/
