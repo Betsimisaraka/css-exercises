@@ -1,0 +1,31 @@
+.icon {
+  background-color: rgb(0, 247, 255);
+  color: white;
+  padding: 1rem;
+}
+
+.icon_left::before {
+  content: '';
+  background-image: url("../icon-facebook.png");
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.icon_right::after {
+  content: '';
+  background-image: url("../icon-facebook.png");
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: 1rem;
+}
