@@ -1,1 +1,40 @@
 @import "setup.css";
+
+.icon {
+  background-color: cyan;
+  width: 3rem;
+  height: 2rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  color: white;
+}
+
+a[href^="https://facebook.com"].icon.icon_left {
+  background-image: url("../icon-facebook.png");
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+
+}
+
+a[href^="https://facebook.com"].icon.icon_right {
+  background-image: url("../icon-facebook.png");
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.breadcrumb {
+  text-align: left;
+  display: inline;
+}
