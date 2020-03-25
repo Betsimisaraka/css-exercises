@@ -1,14 +1,29 @@
-.example img {
-  max-width: 800px;
-  max-height: 900px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.table_container th {
-  white-space: nowrap;
-  min-width: 300px;
+/*
+img {
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
-.example svg {
-  width: 80vw;
-  height: 40vw;
+img[width] [height] {
+  width: auto;
+  height: auto;
+}
+*/
+
+table {
+  min-width: 320px;
+}
+
+#table_container {
+  overflow: auto;
+}
+
+svg {
+  max-height: 100vh;
+  max-width: 100vw;
 }
