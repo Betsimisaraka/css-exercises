@@ -1,0 +1,52 @@
+/*
+-relative:	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position.
+
+-absolute:	The element is positioned relative to its first positioned (not static) ancestor element.
+
+-fixed:	The element is positioned relative to the browser window.
+
+-sticky:	The element is positioned based on the user's scroll position
+A sticky element toggles between relative and fixed, depending on the scroll position.
+*/
+/*
+The default value for position
+   is static.
+*/
+/*
+1-What are some of the other properties you need to supply when using any non-default position value?
+top
+left
+width
+height
+
+2-What is the inferred display value of an element that has been positioned?
+display: block
+
+3-One of the non-default values for position still maintains a box in the flow of the document. Which one is it?
+it is the absolute position.
+
+4-What is special or significant about fixed and sticky positioning?
+A sticky element toggles between relative and fixed, depending on the scroll position.
+
+5-When positioning an element absolutely, how can we lock that element's coordinates to its parent element?
+When you set the element in a absolutely positioning it will be affect the body instead of the parent element.
+
+6-What are absolute positioned layouts useful for?
+It allows you to position an image so that image will contain an idea bihend it.
+It can help you to add an atractive image on your website.
+It is used to bundle images.
+you can easily specify the color of the background of the picture.
+You can control the height and the width of the document.
+
+7-Sometimes if you put two absolutely positioned elements in the same physical space, they'll stack, i.e. only one will be visible on top.
+What are the rules here?
+position should be absolute or relative and the z-index value depents on you.
+Why is a certain element on top?
+Because you use the z-index property in the rule of the one element.
+How can we adjust that ourselves?
+To adjust them use the correct z-index property.
+
+
+8-What is CSS's 'Stacking Context'?
+Stacking contect is when the content is stacking in one an other.
+A stacking context is created when an element is positioned and assigned a z-index value other than auto , or when an element has an opacity value less than 1.
