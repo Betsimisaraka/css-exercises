@@ -1,7 +1,7 @@
 nav.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: #eee;
+  background-color: lightgray;
 }
 
 nav.breadcrumb ol li {
@@ -12,16 +12,16 @@ nav.breadcrumb ol li {
 nav.breadcrumb li+li:before {
   padding: 8px;
   color: black;
-  content: '►';
+  content: '<';
 }
 
 nav.breadcrumb li a {
-  color: #0275d8;
+  color: #02d8b4;
   text-decoration: none;
 }
 
 
 nav.breadcrumb li a:hover {
-  color: #01447e;
+  color: #150169;
   text-decoration: underline;
 }
