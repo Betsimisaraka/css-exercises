@@ -1,14 +1,41 @@
 section:nth-of-type(4) .example {
   width: auto;
   height: 200px;
+  position: relative;
 }
 
 section:nth-of-type(4) .example svg:nth-of-type(1) {
   position: absolute;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+  bottom: 0%;
+  right: 0%;
+}
+
+section:nth-of-type(4) .example svg:nth-of-type(2) {
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  bottom: 0%;
+  right: 0%;
+}
+
+section:nth-of-type(4) .example svg:nth-of-type(3) {
+  position: absolute;
   z-index: 1;
-  z-index: 1;
-    width: 200px;
-    height: 200px;
-    bottom: -297%;
-    right: 71%;
+  width: 200px;
+  height: 200px;
+  bottom: 0%;
+  right: 0%;
+}
+
+section:nth-of-type(4) .example svg:nth-of-type(4) {
+  position: absolute;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+  bottom: 0%;
+  right: 0%;
 }
