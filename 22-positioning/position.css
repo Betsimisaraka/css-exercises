@@ -7,12 +7,12 @@
 
 -sticky:	The element is positioned based on the user's scroll position
 A sticky element toggles between relative and fixed, depending on the scroll position.
-*/
-/*
+
+
 The default value for position
    is static.
-*/
-/*
+
+
 1-What are some of the other properties you need to supply when using any non-default position value?
 top
 left
@@ -44,9 +44,9 @@ position should be absolute or relative and the z-index value depents on you.
 Why is a certain element on top?
 Because you use the z-index property in the rule of the one element.
 How can we adjust that ourselves?
-To adjust them use the correct z-index property.
-
+To adjust them use the correct z-index value.
 
 8-What is CSS's 'Stacking Context'?
 Stacking contect is when the content is stacking in one an other.
 A stacking context is created when an element is positioned and assigned a z-index value other than auto , or when an element has an opacity value less than 1.
+*/
