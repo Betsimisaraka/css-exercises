@@ -7,3 +7,32 @@ input[type=checkbox]:checked ~ .dropdown_contents > ul {
 li > a {
   text-decoration: none;
 }
+/*
+ Shared state style
+.dropdown {
+
+}
+
+.dropdown [type="checkbox"] {
+
+}
+
+.dropdown_trigger {
+
+}
+
+.dropdown_contents {
+
+}
+ Create default state: closed / unchecked
+
+.dropdown_trigger {
+
+}
+
+.dropdown_contents{
+
+}
+ Create alternative state: open /checked
+[type="checbox"]
+*/
