@@ -6,27 +6,26 @@ Floats: none
 clear: none
 
 2- The posible value for clear
-
 clear: right, left, both, none
 
 3- What is the rule associated with a floated item in terms of source order?
-  If you use float property don't use posisioning property together with it.
-  You have to put an image element before the text paragraph element.
+  The float must go before any content.
 
 4- Can you float other elements besides images?
    yes we can
+   When you float and then it is became an inline element
 
 5- Is there a way to create a two-column layout with floats?
 we use display: table and clear: both in the parents element, and content:"",
 
-BFC
+BFC Block Formatting Contexts
 
 1- Describe in your own words what BFC is all about.
-When you set a border around everything which you do and everything are included inside of that box.
+BFC sets of rules that how the container contains its content.
 
 2- We can 'clear' a float by creating a block formatting context on the parent, this is achieved by putting a certain set of properties on the container. What are those properties?
-padding, border, margin, width and height.
+overflow: auto,hidden,scroll, position: absolute.
 
 3- Will you forget about Block Formatting Contexts tomorrow? :P
-Maybe, but I don't know.
+Maybe, but I don't know, It depends on how hard or easy it is.
 */
