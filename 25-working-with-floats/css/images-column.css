@@ -1,0 +1,25 @@
+section:nth-of-type(2) div::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+section:nth-of-type(2) .container {
+  overflow: hidden;
+}
+
+section:nth-of-type(2) .container img {
+  float: left;
+  width: 200px;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+section:nth-of-type(2) .container .doctor_claw {
+  float: left;
+  clear: none;
+  width: 200px;
+  padding-right: 1rem;
+  padding-left: 0;
+}
