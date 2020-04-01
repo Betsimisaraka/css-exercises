@@ -1,0 +1,32 @@
+section:nth-of-type(4) div.example {
+  overflow: hidden;
+}
+
+section:nth-of-type(4) div.example div.form_toolbar {
+  float: right;
+  margin-top: -3.7rem;
+}
+
+section:nth-of-type(4) div.form_row {
+  float: left;
+  clear: left;
+  margin-left: 3rem;
+}
+
+section:nth-of-type(4) div.field {
+  float: right;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+section:nth-of-type(4) div.form_actions {
+  margin-left: 8rem;
+}
+
+label[for="field_title"] {
+  margin-inline-start: 2.4rem;
+}
+
+label[for="field_end_date"] {
+  margin-inline-start: 0.2rem;
+}

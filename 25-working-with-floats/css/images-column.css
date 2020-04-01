@@ -2,7 +2,6 @@ section:nth-of-type(2) div::after {
   content: "";
   display: table;
   clear: both;
-
 }
 
 section:nth-of-type(2) .container {
@@ -16,10 +15,13 @@ section:nth-of-type(2) .container img {
   padding-bottom: 1rem;
 }
 
-section:nth-of-type(2) .container .doctor_claw {
-  float: left;
+section:nth-of-type(2) div.container .doctor_claw {
   clear: none;
   width: 200px;
   padding-right: 1rem;
-  padding-left: 0;
 }
+
+section:nth-of-type(2) .container p:last-of-type {
+  display: flex;
+}
+
