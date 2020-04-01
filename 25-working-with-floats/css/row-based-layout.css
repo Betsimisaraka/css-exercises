@@ -1,32 +1,32 @@
-section:nth-of-type(4) div.example {
-  overflow: hidden;
+section:nth-of-type(4) .example header {
+  float: left;
+  line-height: 36px;
+  margin-bottom: 3rem;
 }
 
 section:nth-of-type(4) div.example div.form_toolbar {
   float: right;
-  margin-top: -3.7rem;
+  margin-left: 22rem;
+  text-align: right;
+  margin-top: -7rem;
 }
-
-section:nth-of-type(4) div.form_row {
-  float: left;
-  clear: left;
-  margin-left: 3rem;
+.form_row {
+  clear: both;
+  margin: 1rem 0;
 }
-
-section:nth-of-type(4) div.field {
-  float: right;
+.field {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 
+.form_row label {
+  float: left;
+  line-height: 39px;
+  width: 9rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
 section:nth-of-type(4) div.form_actions {
-  margin-left: 8rem;
-}
-
-label[for="field_title"] {
-  margin-inline-start: 2.4rem;
-}
-
-label[for="field_end_date"] {
-  margin-inline-start: 0.2rem;
+  margin-left: 10rem;
 }
