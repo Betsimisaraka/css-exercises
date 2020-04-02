@@ -1,0 +1,158 @@
+1- /*display values of flex and inline-flex
+
+*/
+div {
+  display: flex;
+}
+/*flex-flow
+IT specifies how the items are placed inside of the flexbox.
+*/
+div {
+  flex-flow: row-reverse;
+}
+/*flex-wrap
+It sets the wrap of the items whether it is wrap in one line or wrap into the other line.
+*/
+div {
+  flex-wrap: wrap-reverse;
+}
+/*flex-direction
+It specifies how flex items are placed in the flex container, by setting the direction of the flex container’s main axis.
+*/
+div {
+  flex-direction: row;
+}
+/*align-items
+It aligns the flex items in a different ways along the cross axis in the contenair.
+*/
+div {
+  align-items: flex-start;
+}
+/*justify-content
+It aligns the flex items in a different ways along the main axis in the contenair.
+*/
+div {
+  justify-content: flex-start;
+}
+/*align-content
+It specifies the spaces in between the items inside the container.
+*/
+div {
+  align-content: space-around;
+}
+
+2- flex
+/*flex-grow
+It spacifies the flex grow factor of a flex item's main size.
+*/
+div {
+  flex-grow: 2;
+}
+/*flex-shrink
+It spacifies the flex shrink factor of a flex item's main size.
+*/
+div {
+  flex-shrink: 1;
+}
+
+/*flex-basis
+It sets the initial main size of the flex items inside the container.
+*/
+div {
+  flex-basis: 200px;
+}
+
+/*align-self
+Allows the default alignment along the cross axis to be overridden for individual flex items.
+*/
+div {
+  align-self: center;
+}
+
+/*order
+It sets to arrange the places of the flex items.
+*/
+div {
+  order: 2;
+}
+/*
+3-
+- Flex container is the big box which contain all of the items.
+
+- Flex item is the child inside of the flex container.
+
+- Main axis is deppendes on the position of your container. If your flex direction is row the main axis is (x) but if your flex direction is column the main axis is (y).
+
+- Cross axis is deppendes on the position of your container. If your flex direction is row the cross axis is (y) but if your flex direction is column the cross axis is (x)
+- flex-start value is in the main axis and in the cross axis.
+- flex-end value is in the cross axis and in the main axis.
+
+1- What is the order of property values in the shorthand flex property? i.e. Given… flex: 2 1 auto, what does the 2, 1 and auto represent?
+- order or reverse.
+- number 2 goes first and number 1 after and the third one is auto follow the two before.
+
+2- What flex-wrap or flex-flow values do we need before we can use align-content?
+ - flex-wrap: wrap;
+
+3- How is align-content different to align-items?
+The align-content property specifies how flex lines are aligned along the cross-axis but the align-items property sets how flex items are aligned within a flex line and along the cross-axis.
+
+4- The flex item's align-self is the property which overrides the other.
+
+5- Content-box box in model property is similar to flex-basis.
+
+6- The other can change the whole order of the flex items at the container level. What is that property or value?
+Flex-direction: row-reverse; or flex-direction: column-reverse;.
+
+7- Let's say we wanted some space between each of our three flex items in a flex column. Name at least two possible ways to achieve this.
+align-content: space-around;
+justify-content: space-between;
+flex-direction: column;
+*/
+body > header {
+  margin-inline-start: 5rem;
+}
+main .container {
+  width: 800px;
+  height: 500px;
+  margin-left: 2rem;
+  border: 10px solid green;
+ align-items: center;
+ justify-content: space-evenly;
+ flex-direction: row;
+ display: inline-flex;
+ flex-wrap: wrap;
+ align-content: space-between;
+}
+
+.container p:nth-of-type(1) {
+  border: 5px solid blue;
+  width: 200px;
+  height: 200px;
+  background-color: orchid;
+  color: floralwhite;
+  align-self: flex-end;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+.container p:nth-of-type(2) {
+  border: 5px solid red;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  color: azure;
+  align-self: flex-start;
+  flex-basis: 300px;
+  flex-shrink: 1;
+}
+.container p:nth-of-type(3) {
+  border: 5px solid red;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: #fff;
+  align-self: center;
+  flex-basis: 300px;
+  flex-grow: 3;
+}
+
