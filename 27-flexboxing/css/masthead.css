@@ -11,8 +11,8 @@ main > header {
   color: #fff;
   padding: 4rem 0;
   box-sizing: border-box;
-  min-height: 30rem;
-  margin-block-start: -4rem;
+  min-height: 35rem;
+  margin-block-start: -10rem;
   display: flex;
   justify-content: center;
   align-items: center;
