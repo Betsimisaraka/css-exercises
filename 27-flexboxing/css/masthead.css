@@ -11,7 +11,12 @@ main > header {
   color: #fff;
   padding: 4rem 0;
   box-sizing: border-box;
-  min-height: 50vh;
+  min-height: 30rem;
+  margin-block-start: -4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 main > header > h2 {

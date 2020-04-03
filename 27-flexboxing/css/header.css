@@ -1,5 +1,10 @@
 body > header {
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 body > header h1 {
@@ -10,4 +15,9 @@ body > header h1 {
 body > header a {
   color: inherit;
   text-decoration: none;
+}
+
+body > header h1 {
+  align-self: start;
+  margin-inline-start: 4rem;
 }

@@ -4,6 +4,32 @@ footer ul {
   padding: 0;
 }
 
+body > footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 footer p {
   color: #999;
+}
+
+footer > nav {
+  width: 213px;
+}
+
+footer > nav ul {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-top: 3rem;
+}
+
+footer > nav li {
+  margin-right: 1rem;
+}
+
+footer > nav li:nth-of-type(3) {
+  margin-right: 0;
 }
