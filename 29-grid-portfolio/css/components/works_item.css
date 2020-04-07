@@ -1,5 +1,8 @@
 .works_item {
-
+   display: grid;
+   grid-template-columns: repeat(6, 145px);
+   column-gap: 15px;
+   row-gap: 30px;
 }
 
 .works_item_header {
@@ -7,17 +10,26 @@
 }
 
 .works_item_content {
-
+   display: grid;
+   grid-template-columns: repeat(6, 145px);
+   column-gap: 15px;
+   row-gap: 30px;
 }
 
 .works_item_image_container {
-
+   display: grid;
+   grid-column: 1 / 7;
+   grid-row: 1 / 7;
 }
 
 .works_item_navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  column-gap: 15px;
+  row-gap: 30px;
 }
 
 .works_item_navigation a {
