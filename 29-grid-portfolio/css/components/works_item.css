@@ -10,7 +10,7 @@
   color: #ccc;
   display: grid;
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
 }
 
 .works_item_content {
@@ -31,8 +31,9 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(6, 145px);
+  grid-template-columns: repeat(1, 145px);
   grid-column: 1 / 2;
+  align-items: end;
 }
 
 .works_item_navigation a {
