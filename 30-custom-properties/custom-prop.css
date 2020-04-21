@@ -1,0 +1,61 @@
+/*
+1-The characters which we have to use when defining a custom Property's name are:
+    - whith double dashes in front
+    - instead of space we use dash
+    - lowercase
+
+2- The characters that we can't use in a Custom Property name are:
+    - space
+    - upercase
+
+3- The possible values can we assign to a new Custom Property are:
+   - number
+   - color
+
+4- It is useful to create Custom Properties using the `:root` or `html` selector:
+    - When we want to apply the Custom Property to all the html document.
+ When is it not? Hint: *scope*
+    - If we want to define the value of a variable in a specific context.
+
+5- After we've defined a new Custom Property, how can we recall or use that Custom Property?
+    We change the value of the property to the new Custom Property.
+    we use Var function.
+
+6- There are several ways to override or change a Custom Property. Can you name at least 3?
+    Variable, default value, mixing, inline properties.
+
+7- It is useful because, we can avoid repeatition and it enable us to simplify the declaration.
+
+8- What is the only aspect (or part) of CSS syntax that we can use Custom Properties for?
+   We only use Custom Property for property value or declaration.
+*/
+
+:root {
+  --columns: 2;
+  --cell-color: yellow;
+  --base-unit: calc(var(--columns) / 2 * 1rem);
+}
+ul{
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  gap: var(--base-unit);
+  font-size: var(--base-unit);
+  line-height: 1;
+}
+li {
+  background-color: var(--cell-color);
+}
+
+@media (min-width: 640px){
+  :root{
+    --columns: 4;
+  }
+}
+@media (min-width: 1024) {
+  :root {
+    --columns: 6;
+  }
+}
