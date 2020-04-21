@@ -8,3 +8,10 @@
 
   This would get crazy if I had to write out each and every anchor within each row, setting the unique `hsla()` per anchor.
 */
+:root {
+  --hue: 36deg;
+  --saturetion: 100%;
+  --lightness: 50%;
+  --base-opacity: 0.1;
+}
+

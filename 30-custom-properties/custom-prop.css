@@ -3,31 +3,41 @@
     - whith double dashes in front
     - instead of space we use dash
     - lowercase
+    - alpha numeric
 
 2- The characters that we can't use in a Custom Property name are:
     - space
     - upercase
+    - period or full stop
 
 3- The possible values can we assign to a new Custom Property are:
    - number
-   - color
+   - what ever you want
 
 4- It is useful to create Custom Properties using the `:root` or `html` selector:
     - When we want to apply the Custom Property to all the html document.
+    - If you want the value to inherite with the html
  When is it not? Hint: *scope*
     - If we want to define the value of a variable in a specific context.
+    - If you want to have a different value.
 
 5- After we've defined a new Custom Property, how can we recall or use that Custom Property?
-    We change the value of the property to the new Custom Property.
-    we use Var function.
+    We recall var(--name-of-the-custom-property).
+    we use Var function. Var is a keyword
 
-6- There are several ways to override or change a Custom Property. Can you name at least 3?
-    Variable, default value, mixing, inline properties.
+6- There are several ways to override or change a Custom Property. These are three of them:
+    - change the value
+    - change it with a selector
+    - using media querry (@media)
+    - or just put in one selector but different values
 
-7- It is useful because, we can avoid repeatition and it enable us to simplify the declaration.
+7- It is useful because,
+    - we can avoid repeatition,
+    - write less code(simplier)
+    - 1 point of control(only fixe it in one propety)
 
 8- What is the only aspect (or part) of CSS syntax that we can use Custom Properties for?
-   We only use Custom Property for property value or declaration.
+   We only use Custom Property for property value or declaration block.
 */
 
 :root {
