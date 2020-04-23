@@ -1,15 +1,38 @@
+:root {
+  --base-hieght: 400;
+  --base-width: 800;
+  --default: 100%;
+}
+
 #ratio_2_1 {
-  padding-block-start: 50%;
+  /*
+  padding-block-start: calc((var(--height) / var(--width)) * var(--default));
+  */
+  --hieght-addition: 0;
 }
 
 #ratio_16_9 {
-  padding-block-start: 56.25%;
+  /*
+  padding-block-start: calc((450 / var(--width)) * var(--default));
+  */
+  --hieght-addition: 50;
 }
 
 #ratio_4_3 {
-  padding-block-start: 75%;
+  /*
+  padding-block-start: calc((600 / var(--width)) * var(--default));
+  */
+  --hieght-addition: 200;
 }
 
 #ratio_1_1 {
-  padding-block-start: 100%;
+  /*
+  padding-block-start: calc((var(--width) / var(--width)) * var(--default));
+  */
+  --hieght-addition: 400;
+}
+
+.ratio {
+  --hieght: calc(var(--hieght-addition) + var(--base-hieght));
+  padding-block-start: calc(var(--hieght) / var(--base-width) * var(--default));
 }
