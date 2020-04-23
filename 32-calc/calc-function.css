@@ -1,0 +1,49 @@
+/*
+1- What values can a calc() function support?
+   - umber, length, frequency, angle, time, percentage, and integer.
+
+2- How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like calc(2 + 3 * 4) doesn't equal 20, when it is instead meant to equal 14?
+- We use parentheses. calc((2 + 3) * 4) = 20.
+
+
+3- Can we use a calc() function to convert one type of unit to another type of unit?
+    - Yes we can, like percentage with a pixele.
+
+4- If we want to convert a unitless number to a unit value, what do we have to do?
+   - you can do addition or multiplication or division with the unit that you want to use.It depents on the math.
+
+5- Why do the plus and minus operators inside the function need spaces around them?
+  - We use spaces around the plus and minus operators because can avoid the function not to link together.
+
+6- How can we convert a value into a negative value?
+   - the number multiple by -1.
+
+7- Can the calc() function work with colour values? e.g. a light red plus a light red should equal a darker red.
+    - We can't, the only thing that we can do is calculate the percentage of the colour which you want to use.
+
+*/
+
+:root {
+  --red: 28;
+  --green: 150;
+  --blue: 130;
+  --p-color: calc(((((var(--red) * 299) + (var(--green) * 587) + (var(--blue) * 114)) / 1000) - 128) * -1000);
+}
+
+p {
+  color:
+    rgb(
+      var(--p-color),
+      var(--p-color),
+      var(--p-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+
+    width: calc(14rem - -325px);
+    height: calc(41vh + -8em);
+}
