@@ -34,6 +34,8 @@
   height: var(--wheel-diameter);
   width: var(--wheel-diameter);
   position: relative;
+  transition: all 2s;
+  transition: rotate(760deg);
 }
 
 .spoke {
