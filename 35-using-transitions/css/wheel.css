@@ -7,7 +7,7 @@
   --max-scene-width: 1000;
   --wheel-radius: calc(var(--wheel-diameter-pixels) / 2);
   --pi: 22 / 7;
-  --circumference: calc(var(--pi) * var(--wheel-diameter-pixels));
+  --circumference: calc(var(--pi) * var(--wheel-diameter));
   --max-travel-distance: calc(var(--max-scene-width));
   --rotation: calc(var(--max-travel-distance) / var(--circumference));
   --rotation-in-degrees: calc(var(--rotation) * 360deg);
@@ -28,7 +28,10 @@
 */
 .scene:hover .wheel {
   left: 100%;
+  transition-property: var(--spoke-arc);
+  transition-duration: 5s;
   transform: rotate(var(--rotation-in-degrees));
+  transition-timing-function: ease-in-out;
 }
 
 /* Wheel setup */
@@ -42,9 +45,8 @@
   height: var(--wheel-diameter-pixels);
   width: var(--wheel-diameter-pixels);
   position: relative;
-  transition-duration: 10s;
-  transition-timing-function: ease-in;
-  transform: rotate(var(--rotation-in-degrees));
+  transition-property: left, transform;
+  transition-duration: 5s;
 }
 
 .spoke {

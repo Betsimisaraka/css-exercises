@@ -10,12 +10,12 @@
     height: 100px;
     background-color: rgba(0, 0, 255, 1);
     color: white;
-    transition-duration: 2s;
-    transition-property: background-color;
     border-radius: 0.5rem;
     border-inline-start: 0.125rem solid rgb(0, 0, 128);
-    border-inline-end: 0.125rem solid rgb(50, 50, 128);
-    border-block-end: 0.25rem solid rgb(50, 50, 128);
+    border-inline-end: 0.125rem solid rgb(0, 0, 128);
+    border-block-end: 0.25rem solid rgb(0, 0, 128);
+    transition-duration: 0.3s;
+    transition-property: background-color, border-width, padding;
     }
 
    buttom:focus,
@@ -23,6 +23,30 @@
        background-color: rgba(0, 0, 255, 0.5);
    }
 
+   button:active {
+     border-width: 0;
+     padding-inline-start: 17px;
+     padding-inline-end: 17px;
+     padding-block-end: 10px;
+     background-color: rgb(210, 255, 255);
+   }
+
+   a {
+     color: salmon;
+     text-decoration: underline;
+     text-decoration-color: currentColor;
+     transition-property: text-decoration-color;
+     transition-duration: 1s;
+     font-size: 4rem;
+   }
+
+   a:hover {
+     text-decoration-color: transparent;
+     transition-property: scale 1s;
+   }
+   a:active {
+     text-decoration-color: blue;
+   }
   </style>
 </head>
 <body>
@@ -33,6 +57,9 @@
   </header>
 
   <button>Log in</button>
+   <div>
+     <a href="https//about"> Link to about</a>
+   </div>
 
 </body>
 </html>
