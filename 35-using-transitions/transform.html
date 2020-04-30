@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid;
+   }
+    div::before,
+    div::after {
+      content: '';
+      background-color: #cccccc;
+      display: block;
+      position: absolute;
+    }
+    div::before {
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+
+    }
+    div::after {
+      top: 50%;
+      height: 1px;
+      left: 0;
+      right: 0;
+    }
+     a {
+      display: block;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      width: 5vw;
+      height: 5vw;
+      background-color: blue;
+      transform: translate(50%, 50%) rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transform</h1>
+  </header>
+    <div>
+      <a></a>
+    </div>
+</body>
+</html>
