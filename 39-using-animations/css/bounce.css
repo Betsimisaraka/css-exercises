@@ -23,4 +23,29 @@
     50% -25px,
     50% 50%;
   background-repeat: no-repeat;;
+  animation-name: ballbounce;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
+
+@keyframes ballbounce {
+  0% {
+    top: 0;
+    animation-timing-function: linear;
+  }
+
+  50% {
+    top: 50%;
+    animation-timing-function: linear;
+  }
+
+  100% {
+    top: 80%;
+    animation-timing-function: linear;
+    transform: scale(2,2);
+  }
+}
+
+
