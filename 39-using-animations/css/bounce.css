@@ -22,30 +22,16 @@
   background-position:
     50% -25px,
     50% 50%;
-  background-repeat: no-repeat;;
-  animation-name: ballbounce;
-  animation-duration: 2s;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  animation: updown 1s 0.6s ease-in infinite alternate,
+			       leftright 3s 0.5s linear infinite alternate;
 }
-
-@keyframes ballbounce {
-  0% {
-    top: 0;
-    animation-timing-function: linear;
-  }
-
-  50% {
-    top: 50%;
-    animation-timing-function: linear;
-  }
-
-  100% {
-    top: 80%;
-    animation-timing-function: linear;
-    transform: scale(2,2);
-  }
+@keyframes updown {
+  0% {transform: scale(1,1) translateY(-20px);}
+ 89% {transform: scale(0.97,1.03) translateY(400px);}
+100% {transform: scale(1.1, 0.9) translateY(500px);}
 }
-
-
+@keyframes leftright {
+  0% {left: -20px;}
+100% {left: 500px;}
+}
