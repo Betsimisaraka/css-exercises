@@ -1,0 +1,17 @@
+/*
+1- `box-shadow` and `text-shadow` have very similar value syntax.
+
+  We can't use thickness value and a inser in the text-shadow.
+  But we can use all of the value on box-shadow.
+
+3- If I wanted to create a hard-edge shadow, one that looks like a solid border, what combination of values would I need to use?
+You have to use x, y, blur, thickness, and color.
+
+3- Is it possible to create a shadow on a circular element?
+ Yes, it is.
+ What about a polygon?
+ Yes, it is.
+
+4- Is it possible to create multiple shadows on the same element?
+Yes, it is but you have to separate them with a comma.
+*/
