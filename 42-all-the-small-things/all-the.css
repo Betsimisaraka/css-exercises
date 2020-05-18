@@ -1,0 +1,18 @@
+body {
+  background-color: beige;
+}
+
+#curs {
+  cursor: pointer;
+  color: palevioletred;
+}
+
+
+section {
+  columns: 1;
+}
+@media (min-width: 1024px) {
+  section {
+    columns: 3;
+  }
+}
