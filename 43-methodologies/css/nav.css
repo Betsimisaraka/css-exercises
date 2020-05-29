@@ -22,7 +22,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav {
+.navigation__container {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -33,13 +33,13 @@ body {
   max-width: var(--container-max-width);
 }
 
-.nav_anchor {
+.navigation__link {
   text-decoration: none;
   font-size: var(--nav-font-size);
   color: var(--inverse-colour);
 }
 
-.nav__list_item {
+.navigation__list_item {
   flex-grow: 1;
   text-align: center;
   margin-inline-end: var(--nav-tab-gap);
@@ -52,7 +52,7 @@ body {
   padding-block-end: var(--nav-tab-vertical-padding);
 }
 
-.nav__list_item--active:active {
+.navigation__list_item--active:active {
    background-color: var(--primary-colour);
    font-size: var(--nav-active-font-size);
    padding-inline-start: var(--nav-active-tab-horizontal-padding);
@@ -68,11 +68,11 @@ body {
   color: var(--inverse-colour);
 }
 
-.nav__list_item--inactive__help {
+.navigation__list_item--inactive__help {
   margin-inline-end: -2rem;
 }
 
-.nav__list_item--inactive:active {
+.navigation__list_item--inactive:active {
   background-color: var(--primary-colour);
   font-size: var(--nav-active-font-size);
   padding-inline-start: var(--nav-active-tab-horizontal-padding);
