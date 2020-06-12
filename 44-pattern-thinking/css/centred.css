@@ -14,15 +14,46 @@
 
 /* 4 */
 [data-example="4"] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
 
+[data-example="4"] .centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 /* 5 */
-[data-example="5"] {
 
+[data-example="5"] .centred {
+  transform: translate(0%, 50%);
+  text-align: center;
+}
+
+[data-example="5"] p {
+  display: inline-block;
+  text-align: center;
 }
 
 /* 6 */
-[data-example="6"] {
-
+[data-example="6"] div {
+  margin-block-start: 2.5rem;
 }
+
+[data-example="6"] .centred {
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  text-align: center;
+}
+
+[data-example="6"] p {
+  padding: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+
