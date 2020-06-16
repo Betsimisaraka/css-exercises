@@ -65,7 +65,7 @@
 }
 [data-example="2"] article {
   display: grid;
-  grid-template-rows: repeat(3, 80px);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 1rem;
   padding-block-end: 0;
 }
