@@ -60,19 +60,22 @@
 /* 2 */
 [data-example="2"] {
   display: grid;
-  outline: 1rem solid black;
+  border: 1rem solid black;
   padding: 0;
 }
 [data-example="2"] article {
   display: grid;
-  grid-template-rows: repeat(3, 90px);
+  grid-template-rows: repeat(3, 80px);
   row-gap: 1rem;
+  padding-block-end: 0;
 }
 
-[data-example="2"] article > header h2,
-[data-example="2"] article > .content p,
-[data-example="2"] article > footer p {
-  display: inline-block;
+[data-example="2"] article > header,
+[data-example="2"] article > .content,
+[data-example="2"] article > footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 3 */

@@ -29,14 +29,16 @@
 
 /* 5 */
 
-[data-example="5"] .centred {
-  transform: translate(0%, 50%);
-  text-align: center;
+[data-example="5"] {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-[data-example="5"] p {
-  display: inline-block;
-  text-align: center;
+[data-example="5"] .centred {
+  display: grid;
+  justify-content: center;
 }
 
 /* 6 */
